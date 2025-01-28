@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .view-details {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <main id="main" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src=".\assets\img\portfolio\15.jpg" alt="Product 1">
+                        </div>
+                        <div class="product-title">Poultry Raking Machine – CHAMP R5</div>
+                        <div class="product-description">Description of Poultry Raking Machine – CHAMP R5</div>
+                        <a href="product1.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src=".\assets\img\brooder2.jpg" alt="Product 2">
+                        </div>
+                        <div class="product-title">Electric Brooder – STARK 4X</div>
+                        <div class="product-description">Description of Electric Brooder – STARK 4X</div>
+                        <a href="product2.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
